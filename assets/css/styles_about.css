@@ -8,42 +8,6 @@
     src: url(/assets/fonts/Mont-HeavyDEMO.otf);
 }
 
-/*must be present in all webpages*/
-.nav { 
-    position: relative;
-    bottom: 0;
-    height: 4rem;
-    width: 100%;
-    border: 2px solid white;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: white;
-    overflow: hidden;
-}
-
-#nav-items {
-    margin-top: 15px;
-}
-
-.nav-link{
-    font-family: MontHeavy;
-    font-size: 1.5rem;
-    text-decoration: none;
-    padding: 3rem;
-    color: #00010f;
-    transition: 1s;
-}
-
-.active {
-    transition: 1s;
-    border-radius: 7px;
-    background-color: #b514ff;
-    color: #00010f;
-}
-/*must be present in all webpages*/
-
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -142,37 +106,6 @@ body {
 /* mobile */
 
 @media screen and (max-width: 599px) {
-    .nav { 
-        position: fixed;
-        bottom: 0;
-        height: 2.5rem;
-        width: 100%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border: none;
-        z-index: 3;
-    }
-    
-    #nav-items {
-        margin-top: .6em;
-    }
-    
-    .nav-link{
-        font-family: MontHeavy;
-        font-size: 0.9em;
-        text-decoration: none;
-        padding: 0.2em;
-        color: #00010f;
-        transition: 1s;
-    }
-    
-    .active {
-        transition: 1s;
-        border-radius: 7px;
-        background-color: #b514ff;
-        color: #00010f;
-    }
-
     #header > div > p:nth-child(2), p:nth-child(3){
         display: none;
     }
@@ -196,15 +129,6 @@ body {
 }
 
 @media screen and (min-width: 600px) and (max-width: 992px) {
-    .nav-link{
-        font-family: MontHeavy;
-        font-size: 110%;
-        padding: 1.5em;
-        text-decoration: none;
-        color: #00010f;
-        transition: 1s;
-    }
-
     .cards {
         transform: translateX(80%);
         

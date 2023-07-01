@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Alliance;
+    src: url(/assets/fonts/AllianceNo.1-Light.otf);
+}
+
+@font-face {
+    font-family: MontHeavy;
+    src: url(/assets/fonts/Mont-HeavyDEMO.otf);
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: #00010f;
+    color: white;
+    position: relative;
+}
+
+.text {
+    display: grid;
+    text-align: center;
+    place-items: center;
+    margin-top: 10rem;
+
+}
+
+.text span:first-child {
+    z-index: 1;
+    font-family: MontHeavy;
+    width: 100%;
+    font-size: clamp(1.5rem,3vw,5rem);
+}
+
+.text span:nth-child(2) {
+    z-index: 1;
+    font-family: Alliance;
+    width: 100%;
+    font-size: clamp(1.5rem,2vw,5rem);
+}
+
+.card {
+    position: absolute;
+}
+
+div.card.first{
+    z-index: 0;
+}
+
+div.card.first img {
+    width: clamp(0.5rem,200px,1000px);
+    rotate: -55deg;
+}
+
+div.card.second, div.card.third {
+    z-index: 2;
+}
+
+div.card.second img {
+    width: clamp(50%,80%,1000px);
+    rotate: 25deg;
+    transform: translate(clamp(1rem, 750px, 1000px),clamp(1rem, -500px, 1000px));
+}
+
+div.card.third img {
+    width: clamp(20%,50%,1000px);
+    rotate: -15deg;
+    transform: translate(clamp(1rem, 1100px, 1200px),clamp(-1000px, 400px, 1000px));
+}
+
+@media screen and (max-width: 425px) {
+    div.card.first img {
+        width: clamp(0.5rem,200px,1000px);
+        rotate: 25deg;
+        transform: translate(-10rem,-10rem);
+    }
+}
