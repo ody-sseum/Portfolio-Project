@@ -1,0 +1,224 @@
+@font-face {
+    font-family: Alliance;
+    src: url(/assets/fonts/AllianceNo.1-Light.otf);
+}
+
+@font-face {
+    font-family: MontHeavy;
+    src: url(/assets/fonts/Mont-HeavyDEMO.otf);
+}
+
+/*must be present in all webpages*/
+.nav { 
+    position: relative;
+    bottom: 0;
+    height: 4rem;
+    width: 100%;
+    border: 2px solid white;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+#nav-items {
+    margin-top: 15px;
+}
+
+.nav-link{
+    font-family: MontHeavy;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 3rem;
+    color: #00010f;
+    transition: 1s;
+}
+
+.active {
+    transition: 1s;
+    border-radius: 7px;
+    background-color: #b514ff;
+    color: #00010f;
+}
+/*must be present in all webpages*/
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: #00010f;
+    color: white;
+}
+
+.container, .heading, #profile {
+    display: grid;
+}
+
+.header > p {
+    margin: 0;
+    position: absolute;
+    font-family: MontHeavy;
+    font-size: 13rem;
+    transform: translateX(-16%);
+}
+
+.cards {
+    transform: translateX(80%);
+}
+
+.cards > .card {
+    position: absolute;
+}
+
+.card:nth-child(1) {
+    transform: translateX(-50px);
+}
+
+.card:nth-child(2) {
+    transform: translate(30px,30px);
+    rotate: 30deg;
+}
+
+.card:nth-child(3) {
+    transform: translate(130px,10px);
+    rotate: 60deg;
+}
+
+#profile {
+    margin: 200px 10px 75px ;
+    display:grid;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+}
+
+.card-behind{
+    height: 275px;
+}
+
+.card-behind > img {
+    width: 300px;
+    object-fit: cover;
+    -webkit-mask-image: url(data:image/svg+xml;base64,PCEtLT94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/LS0+CiAgICAgICAgICAgICAgPHN2ZyBpZD0ic3ctanMtYmxvYi1zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiAgICAgICAgICAgICAgICAgICAgPGRlZnM+IAogICAgICAgICAgICAgICAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN3LWdyYWRpZW50IiB4MT0iMCIgeDI9IjEiIHkxPSIxIiB5Mj0iMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDEiIHN0b3AtY29sb3I9InJnYmEoNTUsIDEyMC41MTQsIDI0OCwgMSkiIG9mZnNldD0iMCUiPjwvc3RvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzdG9wIGlkPSJzdG9wMiIgc3RvcC1jb2xvcj0icmdiYSgyNTMuNzgzLCAxODguNjg2LCAyNTUsIDEpIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICAgICAgICAgICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICAgICAgICAgICAgICA8L2RlZnM+CiAgICAgICAgICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI3N3LWdyYWRpZW50KSIgZD0iTTI0LjIsLTI3LjVDMzEuNSwtMjIuNywzNy42LC0xNS4yLDM4LjMsLTcuNEMzOC45LDAuNSwzNC4xLDguNywyOS41LDE3LjNDMjQuOSwyNiwyMC41LDM1LDEzLjcsMzcuNEM3LDM5LjcsLTIuMiwzNS4zLC0xMC4yLDMxQy0xOC4yLDI2LjgsLTI1LjEsMjIuNiwtMjkuOCwxNi4zQy0zNC42LDEwLC0zNy4zLDEuNSwtMzUuMSwtNS40Qy0zMywtMTIuMywtMjYuMSwtMTcuNiwtMTkuNSwtMjIuNUMtMTIuOCwtMjcuMywtNi40LC0zMS42LDEsLTMyLjlDOC41LC0zNC4xLDE2LjksLTMyLjIsMjQuMiwtMjcuNVoiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwIDUwKSIgc3Ryb2tlLXdpZHRoPSIwIiBzdHlsZT0idHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZSAwczsiPjwvcGF0aD4KICAgICAgICAgICAgICA8L3N2Zz4=);
+    mask-image: url(data:image/svg+xml;base64,PCEtLT94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/LS0+CiAgICAgICAgICAgICAgPHN2ZyBpZD0ic3ctanMtYmxvYi1zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiAgICAgICAgICAgICAgICAgICAgPGRlZnM+IAogICAgICAgICAgICAgICAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN3LWdyYWRpZW50IiB4MT0iMCIgeDI9IjEiIHkxPSIxIiB5Mj0iMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDEiIHN0b3AtY29sb3I9InJnYmEoNTUsIDEyMC41MTQsIDI0OCwgMSkiIG9mZnNldD0iMCUiPjwvc3RvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzdG9wIGlkPSJzdG9wMiIgc3RvcC1jb2xvcj0icmdiYSgyNTMuNzgzLCAxODguNjg2LCAyNTUsIDEpIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICAgICAgICAgICAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICAgICAgICAgICAgICA8L2RlZnM+CiAgICAgICAgICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI3N3LWdyYWRpZW50KSIgZD0iTTI0LjIsLTI3LjVDMzEuNSwtMjIuNywzNy42LC0xNS4yLDM4LjMsLTcuNEMzOC45LDAuNSwzNC4xLDguNywyOS41LDE3LjNDMjQuOSwyNiwyMC41LDM1LDEzLjcsMzcuNEM3LDM5LjcsLTIuMiwzNS4zLC0xMC4yLDMxQy0xOC4yLDI2LjgsLTI1LjEsMjIuNiwtMjkuOCwxNi4zQy0zNC42LDEwLC0zNy4zLDEuNSwtMzUuMSwtNS40Qy0zMywtMTIuMywtMjYuMSwtMTcuNiwtMTkuNSwtMjIuNUMtMTIuOCwtMjcuMywtNi40LC0zMS42LDEsLTMyLjlDOC41LC0zNC4xLDE2LjksLTMyLjIsMjQuMiwtMjcuNVoiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwIDUwKSIgc3Ryb2tlLXdpZHRoPSIwIiBzdHlsZT0idHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZSAwczsiPjwvcGF0aD4KICAgICAgICAgICAgICA8L3N2Zz4=);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+#profile > p:nth-child(2) {
+    font-family: MontHeavy;
+    font-size: 65px;
+    margin-bottom: 0;
+}
+
+#profile p{
+    font-family: Alliance;
+    margin-bottom: 0;
+}
+
+#profile p:nth-child(3) {
+    font-size: 20px;
+}
+
+.desc-image > img {
+    margin-top: 20px;
+    width: 120px;
+    border-radius: 100%;
+}
+
+.desc {
+    font-size: 17px;
+}
+
+/* mobile */
+
+@media screen and (max-width: 599px) {
+    .nav { 
+        position: fixed;
+        bottom: 0;
+        height: 2.5rem;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border: none;
+        z-index: 3;
+    }
+    
+    #nav-items {
+        margin-top: .6em;
+    }
+    
+    .nav-link{
+        font-family: MontHeavy;
+        font-size: 0.9em;
+        text-decoration: none;
+        padding: 0.2em;
+        color: #00010f;
+        transition: 1s;
+    }
+    
+    .active {
+        transition: 1s;
+        border-radius: 7px;
+        background-color: #b514ff;
+        color: #00010f;
+    }
+
+    #header > div > p:nth-child(2), p:nth-child(3){
+        display: none;
+    }
+
+    div.cards {
+        transform: translateX(60%);
+        rotate: -15deg;
+    }
+
+    .card img {
+        width: 100px;
+    }
+
+    .header {
+        overflow-x: hidden;
+    }
+
+    .header > p {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .nav-link{
+        font-family: MontHeavy;
+        font-size: 110%;
+        padding: 1.5em;
+        text-decoration: none;
+        color: #00010f;
+        transition: 1s;
+    }
+
+    .cards {
+        transform: translateX(80%);
+        
+    }
+
+    .card img {
+        width: 150px;
+    }
+
+    .header {
+        overflow-x: hidden;
+    }
+
+    .header > p {
+        font-size: 10rem;
+    }
+}
