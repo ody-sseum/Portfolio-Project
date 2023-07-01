@@ -11,6 +11,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
@@ -76,5 +77,11 @@ div.card.third img {
         width: clamp(0.5rem,200px,1000px);
         rotate: 25deg;
         transform: translate(-10rem,-10rem);
+    }
+
+    div.card.second img {
+        width: clamp(0.5rem,200px,1000px);
+        rotate: -25deg;
+        transform: translate(-1rem,15rem);
     }
 }
