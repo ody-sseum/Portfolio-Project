@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/assets/css/styles_contact.css">
+    <script defer src="/assets/js/nav.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div id="nav-items">
+                <a href="/index.html" class="nav-link">
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="/about.html" class="nav-link">
+                    <span class="nav-text">About</span>
+                </a>
+                <a href="/gallery.html" class="nav-link">
+                    <span class="nav-text">Gallery</span>
+                </a>
+                <a href="/project.html" class="nav-link">
+                    <span class="nav-text">Projects</span>
+                </a>
+                <a href="/contact.html" class="nav-link">
+                    <span class="nav-text">Contact</span>
+                </a>
+            </div>
+        </nav>
+        <div>
+            <div class="form-container">
+                <h1>Let's Begin Our Journey</h1>
+                <form name="contactForm">
+                    <div class="txt-field">
+                        <div>
+                            <input type="email" name="emailUser" class="field" required>
+                            <label>E-mail</label>
+                        </div>
+                        <div>
+                            <input type="tel" name="telUser" class="field" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
+                            <label>Phone Number</label>
+                            <span>Format: XXXX-XXX-XXXX</span>
+                        </div>
+                        <input type="submit" value="SUBMIT" onclick="submitForm()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function submitForm() {
+            let x = document.forms["contactForm"]["emailUser"].value;
+            let y = document.forms["contactForm"]["telUser"].value;
+            if (x == "" || y == "") {
+                alert("One or more entries are invalid!");
+            }
+            else {
+                alert("Thank you for submitting!");
+            }
+        }
+    </script>
+</body>
+</html>
