@@ -306,6 +306,10 @@ footer .slide .portrait{
         rotate: 15deg;
         transform: translate(150%, 10%);
     }
+
+    a > input {
+        font-size: 1.1em;
+    }
 }
 
 @media screen and (min-width: 600px) {
